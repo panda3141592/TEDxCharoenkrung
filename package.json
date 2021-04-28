@@ -10,7 +10,10 @@
     "react-dom": "^16.13.1",
     "react-ga": "^2.7.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.1",
+    "react-slideshow-image": "^3.4.6",
+    "rebass": "^4.0.7",
+    "yarn": "^1.22.10"
   },
   "repository": {
     "type": "git",

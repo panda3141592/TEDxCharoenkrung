@@ -1,8 +1,14 @@
 import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
+import Confident from "../elements/icon-2.png";
+import Shy from "../elements/icon-3.png";
+import Independent from "../elements/icon-4.png";
+import Laidback from "../elements/icon-5.png";
+import Adaptable from "../elements/icon-1.png";
+import Button from '../elements/Button';
+import { Flex, Box } from 'rebass';
 
 const propTypes = {
   ...SectionTilesProps.types
@@ -43,155 +49,119 @@ const FeaturesTiles = ({
     pushLeft && 'push-left'
   );
 
-  const sectionHeader = {
-    title: 'Build up the whole picture',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
-  };
 
   return (
     <section
       {...props}
       className={outerClasses}
     >
-      <div className="container">
-        <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
-          <div className={tilesClasses}>
-
-            <div className="tiles-item reveal-from-bottom">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-01.svg')}
-                      alt="Features tile icon 01"
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
-                  <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-02.svg')}
-                      alt="Features tile icon 02"
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
-                  <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-03.svg')}
-                      alt="Features tile icon 03"
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
-                  <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-04.svg')}
-                      alt="Features tile icon 04"
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
-                  <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-05.svg')}
-                      alt="Features tile icon 05"
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
-                  <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-06.svg')}
-                      alt="Features tile icon 06"
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
-                  <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
-                </div>
-              </div>
-            </div>
-
+      <div className="container" paddingBottom="50px">
+        <div className="hero-content">
+          <div className="container-xs">
+            <h4 className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400" style={{textAlign: 'center', paddingBottom: "30px"}}>
+              Dogs have these 5 major personality types
+            </h4>
           </div>
         </div>
+
+        <div className={tilesClasses}>
+
+            <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+
+                <div className="features-tiles-item-header">
+                    <Image
+                      src={Confident}
+                      width={125}
+                      height={125}/>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h6 className="m-0 text-sm" style={{paddingTop: "30px"}}>
+                    Confident
+                  </h6>
+                </div>
+                
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+
+                <div className="features-tiles-item-header">
+                    <Image
+                      src={Shy}
+                      width={125}
+                      height={125} />
+                </div>
+                <div className="features-tiles-item-content">
+                  <h6 className="m-0 text-sm" style={{paddingTop: "30px"}}>
+                    Shy
+                  </h6>
+                </div>
+                
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+
+                <div className="features-tiles-item-header">
+                    <Image
+                      src={Independent}
+                      width={125}
+                      height={125} />
+                </div>
+                <div className="features-tiles-item-content">
+                  <h6 className="m-0 text-sm" style={{paddingTop: "30px"}}>
+                    Independent
+                  </h6>
+                </div>
+                
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+
+                <div className="features-tiles-item-header">
+                    <Image
+                      src={Laidback}
+                      width={125}
+                      height={125} />
+                </div>
+                <div className="features-tiles-item-content">
+                  <h6 className="m-0 text-sm" style={{paddingTop: "30px"}}>
+                    Laidback
+                  </h6>
+                </div>
+                
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+
+                <div className="features-tiles-item-header">
+                    <Image
+                      src={Adaptable}
+                      width={125}
+                      height={125} />
+                </div>
+                <div className="features-tiles-item-content">
+                  <h6 className="m-0 text-sm" style={{paddingTop: "30px"}}>
+                    Adaptable
+                  </h6>
+                </div>
+                
+              </div>
+            </div>
+
+        </div>
+        <Flex style={{justifyContent: 'center'}} paddingBottom="50px">
+          <Button tag="a" color="secondary" wideMobile href="https://cruip.com/">
+            Learn More
+          </Button>
+        </Flex>
       </div>
     </section>
   );

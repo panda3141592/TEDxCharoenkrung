@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
+import { Box, Image } from 'rebass'
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -79,13 +80,14 @@ const Header = ({
       {...props}
       className={classes}
     >
+      <Box sx={{ boxShadow: "0px 4px 6px rgba(209, 209, 209, 0.25)" }}>
       <div className="container">
         <div className={
           classNames(
             'site-header-inner',
             bottomDivider && 'has-bottom-divider'
           )}>
-          <Logo />
+            <Logo />
           {!hideNav &&
             <>
               <button
@@ -112,22 +114,24 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Documentation</Link>
+                      <Link to="#0" onClick={closeMenu}>Find A Match</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>Dog's Personality</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>About Us</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>Contact Us</Link>
                     </li>
                   </ul>
-                  {!hideSignin &&
-                    <ul
-                      className="list-reset header-nav-right"
-                    >
-                      <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
-                      </li>
-                    </ul>}
                 </div>
               </nav>
             </>}
         </div>
       </div>
+      </Box>
     </header>
   );
 }
