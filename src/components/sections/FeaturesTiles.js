@@ -158,7 +158,7 @@ const FeaturesTiles = ({
 
         </div>
         <Flex style={{justifyContent: 'center'}} paddingBottom="50px">
-          <Button tag="a" color="secondary" wideMobile href="https://cruip.com/">
+          <Button tag="a" color="secondary" wideMobile href="./next">
             Learn More
           </Button>
         </Flex>

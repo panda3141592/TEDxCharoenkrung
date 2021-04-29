@@ -74,7 +74,7 @@ const Hero = ({
                   PawsUp help you to find the best partner for your dearest fluffy friend
                 </div>
                 <div data-reveal-delay="600">
-                    <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
+                    <Button tag="a" color="primary" wideMobile href="./next">
                       Find A Match
                     </Button>
                 </div>

@@ -54,11 +54,11 @@ const Slideshow = ({
       className={outerClasses}
     >
       <div className="container" paddingBottom="50px">
-        <Box>
+        <Box width="100%">
             <Slide easing="ease">
             <div className="each-slide">
                 <div style={{'backgroundImage': `url(${Dog1})`, 
-                backgroundSize: "800px 600px",
+                backgroundSize: "800px",
                 height:"600px", 
                 backgroundRepeat: "no-repeat",
                 backgroundPositionX: "center"}}>
@@ -66,7 +66,7 @@ const Slideshow = ({
             </div>
             <div className="each-slide">
                 <div style={{'backgroundImage': `url(${Dog2})`, 
-                backgroundSize: "800px 600px",
+                backgroundSize: "800px",
                 height:"600px", 
                 backgroundRepeat: "no-repeat",
                 backgroundPositionX: "center"}}>
@@ -74,7 +74,7 @@ const Slideshow = ({
             </div>
             <div className="each-slide">
                 <div style={{'backgroundImage': `url(${Dog3})`, 
-                backgroundSize: "800px 600px",
+                backgroundSize: "800px",
                 height:"600px", 
                 backgroundRepeat: "no-repeat",
                 backgroundPositionX: "center"}}>
@@ -82,7 +82,7 @@ const Slideshow = ({
             </div>
             <div className="each-slide">
                 <div style={{'backgroundImage': `url(${Dog4})`, 
-                backgroundSize: "800px 600px",
+                backgroundSize: "800px",
                 height:"600px", 
                 backgroundRepeat: "no-repeat",
                 backgroundPositionX: "center"}}>
