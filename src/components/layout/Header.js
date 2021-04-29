@@ -4,8 +4,7 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
 import { Box, Image } from 'rebass';
-import { useHistory } from 'react-router-dom';
-
+import Search from './partials/search.png';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -37,8 +36,6 @@ const Header = ({
 
   const nav = useRef(null);
   const hamburger = useRef(null);
-  const history = useHistory();
-  const handleClick = () => history.push('/next');
 
   useEffect(() => {
     isActive && openMenu();
@@ -118,16 +115,21 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={handleClick}>Find A Match</Link>
+                      <Link to="next">Find A Match</Link>
                     </li>
                     <li>
-                      <Link to="#0" onClick={handleClick}>Dog's Personality</Link>
+                      <Link to="next">Dog's Personality</Link>
                     </li>
                     <li>
-                      <Link to="#0" onClick={handleClick}>About Us</Link>
+                      <Link to="next">About Us</Link>
                     </li>
                     <li>
-                      <Link to="#0" onClick={handleClick}>Contact Us</Link>
+                      <Link to="next">Contact Us</Link>
+                    </li>
+                    <li>
+                      <Link>
+                        <Image src={Search} size="20px"/>
+                      </Link>
                     </li>
                   </ul>
                 </div>
